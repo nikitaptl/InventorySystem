@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // необходимо чтобы название скрипта и название класса совпадали
-namespace _Source.Core
+namespace _Source.Core.CharacterManagement
 {
     public class CharacterController : MonoBehaviour
     {
@@ -98,4 +98,4 @@ namespace _Source.Core
             rigid.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
         }
     }
-}
+}   
