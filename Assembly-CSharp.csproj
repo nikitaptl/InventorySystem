@@ -65,6 +65,7 @@
      <Folder Include="Assets\InstalledPackages" />
      <Folder Include="Assets\Character\extracte" />
      <Folder Include="Assets\Character" />
+     <Folder Include="Assets\Prefab" />
      <Folder Include="Assets\InstalledPackages\ADG_Textures" />
      <Folder Include="Assets\InstalledPackages\GrassFlowers\Textures\GrassFlowers" />
      <Folder Include="Assets\_Source\Core" />
