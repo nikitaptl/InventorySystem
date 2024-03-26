@@ -74,17 +74,17 @@ namespace _Source.Core.CharacterManagement
 
         void FixedUpdate()
         {
-            Vector3 camF = mainCamera.forward;
-            Vector3 camR = mainCamera.right;
+            Vector3 directionF = mainCamera.forward;
+            Vector3 directionR = mainCamera.right;
 
-            camF.y = 0;
-            camR.y = 0;
+            directionF.y = 0;
+            directionR.y = 0;
             Vector3 movingVector;
 
             movingVector =
                 Vector3.ClampMagnitude(
-                    camF.normalized * Input.GetAxis("Vertical") * _currentSpeed +
-                    camR.normalized * Input.GetAxis("Horizontal") * _currentSpeed, _currentSpeed);
+                    directionF.normalized * Input.GetAxis("Vertical") * _currentSpeed +
+                    directionR.normalized * Input.GetAxis("Horizontal") * _currentSpeed, _currentSpeed);
 
             animator.SetFloat(Magnitude, movingVector.magnitude / _currentSpeed);
             Debug.Log(movingVector.magnitude / _currentSpeed);
@@ -98,4 +98,4 @@ namespace _Source.Core.CharacterManagement
             rigid.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
         }
     }
-}   
+}

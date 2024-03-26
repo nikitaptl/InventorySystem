@@ -1,7 +1,7 @@
 using _Source.Core;
 using UnityEngine;
 
-namespace _Source.Game
+namespace _Source.Game.InventoryManagement
 {
     // This class is responsible for representing an item in the game world
     public class WorldItem : MonoBehaviour

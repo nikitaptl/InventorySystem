@@ -12,5 +12,8 @@ namespace _Source.Core
 
         // A field indicating the maximum amount of resource that can be stored in 1 inventory slot
         public int maximumAmount;
+
+        // In order to throw an Item Object out of the inventory, it is necessary to store information about Prefab
+        public GameObject itemPrefab;
     }
 }

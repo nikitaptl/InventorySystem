@@ -16,5 +16,6 @@ MonoBehaviour:
   itemName: Gun2
   itemIcon: {fileID: 21300000, guid: d0e8fdc0947aa464dac4a346ba5f19bc, type: 3}
   maximumAmount: 1
+  itemPrefab: {fileID: 1771679476523571296, guid: 6f397f37f927173468c682391989477a, type: 3}
   strengh: 0
   damage: 0

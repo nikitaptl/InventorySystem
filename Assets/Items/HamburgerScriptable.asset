@@ -16,4 +16,5 @@ MonoBehaviour:
   itemName: Apple
   itemIcon: {fileID: 21300000, guid: a27170e4880ee294191a229a12978d2e, type: 3}
   maximumAmount: 16
+  itemPrefab: {fileID: 100000, guid: 19f25e532fd156840be6662910d20c27, type: 3}
   hungerAmount: 0

@@ -46,13 +46,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Source\Core\Specific Items\ArmorItemObject.cs" />
+     <Compile Include="Assets\_Source\Game\InventoryManagement\InventorySlot.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\_Source\Core\Specific Items\MaterialItemObject.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
-     <Compile Include="Assets\_Source\Game\InventoryManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
      <Compile Include="Assets\_Source\Core\ObservableItemAmount.cs" />
@@ -63,7 +63,6 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
      <Compile Include="Assets\_Source\Core\Specific Items\InstrumentItemObject.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
-     <Compile Include="Assets\_Source\Game\WorldItem.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
@@ -80,16 +79,18 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+     <Compile Include="Assets\_Source\Game\MoveItemInSlot.cs" />
      <Compile Include="Assets\_Source\Core\Specific Items\TrashItemObject.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
-     <Compile Include="Assets\_Source\Game\InventorySlot.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+     <Compile Include="Assets\_Source\Game\InventoryManagement\InventoryController.cs" />
      <Compile Include="Assets\_Source\Core\Specific Items\WeaponItemObject.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
      <Compile Include="Assets\_Source\Core\ItemObject.cs" />
+     <Compile Include="Assets\_Source\Game\InventoryManagement\WorldItem.cs" />
      <Compile Include="Assets\_Source\Core\ItemType.cs" />
      <Compile Include="Assets\_Source\Core\Specific Items\PotionItemObject.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -106,7 +107,7 @@
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\Rpg" />
-     <Folder Include="Assets\Weapons_FREE\Meshes" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE\Meshes" />
      <Folder Include="Assets\InstalledPackages\ADG_Textures\ground_vol1\ground3" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Demo" />
      <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
@@ -122,7 +123,7 @@
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\Nova" />
      <Folder Include="Assets\InstalledPackages\Darth_Artisan\Free_Trees\Meshes\Materials" />
      <Folder Include="Assets\InstalledPackages\Darth_Artisan\Free_Trees\Textures" />
-     <Folder Include="Assets\Weapons_FREE\Textures" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE\Textures" />
      <Folder Include="Assets\Character\textures" />
      <Folder Include="Assets\Character\Animations" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -139,13 +140,14 @@
      <Folder Include="Assets\InstalledPackages\Darth_Artisan\Free_Trees\Meshes" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Resources" />
-     <Folder Include="Assets\Weapons_FREE\Materials" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE\Materials" />
      <Folder Include="Assets\InstalledPackages\GrassFlowers\Textures\Ground" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\Deagle" />
      <Folder Include="Assets\01_3D\ETC\3D Bakery Object" />
      <Folder Include="Assets\InstalledPackages\Darth_Artisan\Free_Trees" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <Folder Include="Assets\01_3D\ETC\3D Bakery Object\FBX\Materials" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE\Food" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <Folder Include="Assets\01_3D\ETC\3D Bakery Object\Prefab" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -168,7 +170,7 @@
      <Folder Include="Assets\01_3D\ETC" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\01_3D\ETC\3D Bakery Object\FBX" />
-     <Folder Include="Assets\Weapons_FREE" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Prefabs" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\AWP" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\Utility" />
@@ -181,16 +183,17 @@
      <Folder Include="Assets\_Source" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <Folder Include="Assets\InstalledPackages\Darth_Artisan" />
+     <Folder Include="Assets\_Source\Game\InventoryManagement" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\PSL" />
      <Folder Include="Assets\InstalledPackages\GrassFlowers\Demo\DemoGrassFlowers" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\Five_seven" />
-     <Folder Include="Assets\Weapons_FREE\Scenes" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE\Scenes" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras\Textures" />
      <Folder Include="Assets\TextMesh Pro\Documentation" />
-     <Folder Include="Assets\Weapons_FREE\Prefabs" />
+     <Folder Include="Assets\InstalledPackages\Weapons_FREE\Prefabs" />
      <Folder Include="Assets\TextMesh Pro\Examples &amp; Extras" />
      <Folder Include="Assets\InstalledPackages\2DWeaponPack\Sprites\UMP" />
      <Folder Include="Assets\InstalledPackages\ADG_Textures\ground_vol1" />

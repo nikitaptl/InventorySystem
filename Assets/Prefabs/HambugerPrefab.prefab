@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 301743869277851346}
   - component: {fileID: 4599721803144483669}
   m_Layer: 0
-  m_Name: Hambuger
+  m_Name: HambugerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
