@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ff48f6b6d0489b95e139404b99dff1, type: 3}
+  m_Name: UMP
+  m_EditorClassIdentifier: 
+  itemType: 1
+  itemName: Ump
+  itemIcon: {fileID: 21300000, guid: d990de03fe8c68745985fa624fe5d6ab, type: 3}
+  maximumAmount: 1
+  itemPrefab: {fileID: 7152365676416992955, guid: a9d9b146034f72d48a81e2ea2f8f9b56, type: 3}
+  strengh: 0
+  damage: 0
