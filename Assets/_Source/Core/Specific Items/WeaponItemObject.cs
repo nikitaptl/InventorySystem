@@ -8,8 +8,8 @@ namespace _Source.Core.Specific_Items
         // Means how mush you can use Weapon
         public int strengh;
         public float damage;
-
-        private void Start()
+        
+        private void OnEnable()
         {
             itemType = ItemType.Weapon;
             maximumAmount = 1;

@@ -7,7 +7,7 @@ namespace _Source.Core.Specific_Items
     {
         public float hungerAmount;
 
-        private void Start()
+        private void OnEnable()
         {
             itemType = ItemType.Food;
             maximumAmount = 16;

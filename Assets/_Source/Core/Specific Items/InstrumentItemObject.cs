@@ -8,7 +8,7 @@ namespace _Source.Core.Specific_Items
         public int strengh;
         public float damage;
 
-        private void Start()
+        private void OnEnable()
         {
             itemType = ItemType.Instrument;
             maximumAmount = 1;

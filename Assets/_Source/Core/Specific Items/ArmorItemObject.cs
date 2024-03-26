@@ -7,7 +7,7 @@ namespace _Source.Core.Specific_Items
     {
         public float protectionAmount;
 
-        private void Start()
+        private void OnEnable()
         {
             itemType = ItemType.Armor;
             maximumAmount = 1;

@@ -7,7 +7,7 @@ namespace _Source.Core.Specific_Items
     {
         public float cost;
 
-        private void Start()
+        private void OnEnable()
         {
             itemType = ItemType.Trash;
             maximumAmount = 64;

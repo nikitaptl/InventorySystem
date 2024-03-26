@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using _Source;
 using _Source.Core;
 using _Source.Game;
+using Cinemachine;
 using JetBrains.Annotations;
 using UnityEditor;
 using UnityEngine;
@@ -38,10 +39,14 @@ public class InventoryManager : MonoBehaviour
             if (isOpened)
             {
                 uIPanel.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
             else
             {
                 uIPanel.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
             isOpened = !isOpened;
         }
@@ -50,7 +55,6 @@ public class InventoryManager : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit, reachDistance))
         {
-            Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.green);
             var catchedObject = hit.collider.gameObject.GetComponent<WorldItem>();
                 
             if (catchedObject != null)
@@ -58,10 +62,6 @@ public class InventoryManager : MonoBehaviour
                 AddItem(catchedObject.item, catchedObject.amount);
                 Destroy(hit.collider.gameObject);
             }
-        }
-        else
-        {
-            Debug.DrawRay(ray.origin, ray.direction * reachDistance, Color.red);
         }
     }
 
@@ -71,6 +71,10 @@ public class InventoryManager : MonoBehaviour
         {
             if (slot.Item == item)
             {
+                if (slot.Amount.Value + amount > item.maximumAmount)
+                {
+                    continue;
+                }
                 slot.Amount += amount;
                 return;
             }

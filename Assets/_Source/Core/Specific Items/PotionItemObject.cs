@@ -7,7 +7,7 @@ namespace _Source.Core.Specific_Items
     {
         public string effect;
 
-        private void Start()
+        private void OnEnable()
         {
             itemType = ItemType.Potion;
             maximumAmount = 1;
